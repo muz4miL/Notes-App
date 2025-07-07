@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+#notes-container{
+    background-color: rgb(213, 213, 213);
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #afaeae;
+}
+
+#notes-upper{
+    border-bottom: 2px solid gray; 
+    margin-bottom: 20px;
+}
+
+
+#myh1{
+    color: rgb(69, 68, 68);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 4px;
+}
+
+#date{
+    color: rgb(98, 97, 97);
+    font-style: italic;
+    font-size: 16px;
+}
+
+#notes-lower{
+    display: flex;
+}
+
+#notes-input{
+    flex-grow: 1;
+    margin-right: 4px;
+    font-size: 1.2rem;
+    border : none;
+    border-radius: 6px;
+}
+
+#add-btn{
+    border: none;
+    font-size: 1.2rem;
+    background-color: #4dc162;
+    color: rgb(223, 223, 223);
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+
+#add-btn:hover{
+    color: rgb(247, 246, 246);
+    background-color: #38b34e;
+}
+
+
+#note-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+.listed-note{
+    background-color: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+}
+
+.listed-note span {
+    flex: 1;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.delete-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.delete-btn i {
+    font-size: 1rem;
+}
+
+.delete-btn:hover{
+    color: red;
+}
+
+
